@@ -1,0 +1,60 @@
+.footer {
+  max-width: 100%;
+  height: max-content;
+  background-color: #fff;
+  display: flex;
+  padding: 2vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: max(1.5rem, 1vmax);
+}
+.second,
+.third,
+.fourth,
+.fifth {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5vmax;
+  font: 400 14px "roboto";
+  position: relative;
+}
+
+.first {
+  font: 400 14px "roboto";
+  margin-bottom: 1rem;
+}
+.first h3,
+.second h3,
+.third h3,
+.fourth h3,
+.fifth h3 {
+  font-size: max(1.2vmax, 1.2rem);
+}
+.downloadButton {
+  width: 150px;
+  height: auto;
+}
+.brand {
+  font-family: var(--primary-font);
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    padding: 2vmax;
+    margin-top: 2vmax;
+  }
+}

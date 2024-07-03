@@ -1,0 +1,7 @@
+.category a:active {
+  background-color: #e5f1ff;
+  font-weight: bold;
+}
+.category a {
+  font-family: var(--para-font);
+}
